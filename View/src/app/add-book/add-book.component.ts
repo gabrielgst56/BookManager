@@ -36,7 +36,6 @@ export class AddBookComponent implements OnInit {
   }
 
   onSubmit(){
-    debugger;
     let book:Book = new Book(
       0,
       this.addForm.value.name,
