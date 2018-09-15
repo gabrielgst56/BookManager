@@ -1,0 +1,26 @@
+<div class="content">
+    <h2> Book's</h2>
+    <button class="btn btn-danger" (click)="addBook()"> Add book</button>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>        
+        <th>Author</th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{book.Name}}</td>
+        <td>{{book.Price | mask:'00,00' }}</td>
+        <td>{{book.Quantity}}</td>
+        <td>{{book.Author.Name}}</td>
+        <td><button class="btn btn-danger" (click)="deleteBook(book)"> Delete</button>
+          <button class="btn btn-danger" (click)="editBook(book)" style="margin-left: 20px;"> Edit</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>

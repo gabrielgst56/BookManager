@@ -1,0 +1,28 @@
+<div class="content">
+    <h2 class="text-center">Add User</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="name" formControlName="name" placeholder="Name" name="name" class="form-control" id="name">
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input formControlName="price" placeholder="Price" name="price" class="form-control" id="price">
+      </div>
+  
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input formControlName="quantity" placeholder="Quantity" name="quantity" class="form-control" id="quantity">
+      </div>
+  
+      <div class="form-group">
+        <label for="author">Author Name:</label>
+        <select formControlName="author" placeholder="Author" name="author" class="form-control" id="author">
+          <option *ngFor="let author of authors" value="{{author.AuthorId}}">{{author.Name}}</option>
+        </select>
+      </div>
+
+      <button class="btn btn-success">Confirm</button>
+    </form>
+  </div>
