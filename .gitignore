@@ -2,3 +2,4 @@
 *.mdf
 *.ldf
 *.lock
+node_modules/
