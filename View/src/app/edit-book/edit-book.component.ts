@@ -17,7 +17,6 @@ export class EditBookComponent implements OnInit {
   submitted = false;
   book:  Book;
   editForm: FormGroup;
-  modal : NgbdModalBasic;
 
 
   constructor(
