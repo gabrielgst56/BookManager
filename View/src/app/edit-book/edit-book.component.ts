@@ -5,7 +5,6 @@ import { FormGroup, FormBuilder, Validators } from '../../../node_modules/@angul
 import { Router } from '../../../node_modules/@angular/router';
 import { callLifecycleHooksChildrenFirst } from '../../../node_modules/@angular/core/src/view/provider';
 import { NgbModal } from '../../../node_modules/@ng-bootstrap/ng-bootstrap';
-import { NgbdModalBasic } from '../modal/modal.component';
 
 @Component({
   selector: 'app-edit-book',
