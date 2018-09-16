@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit() {
-    
     this.router.navigate(['list-book']);
   }
 

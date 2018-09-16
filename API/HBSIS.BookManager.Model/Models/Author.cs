@@ -1,6 +1,7 @@
 namespace HBSIS.BookManager.Model.Models
 {
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class Author
     {
@@ -9,6 +10,7 @@ namespace HBSIS.BookManager.Model.Models
             Books = new List<Book>();
         }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int AuthorId { get; set; }
 
         public string Name { get; set; }

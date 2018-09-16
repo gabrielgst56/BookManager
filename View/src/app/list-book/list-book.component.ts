@@ -44,5 +44,9 @@ export class ListBookComponent implements OnInit {
     this.router.navigate(['add-book']);
   }
 
+  public addAuthor() : void{
+    this.router.navigate(['add-author']);
+  }
+
 
 }

@@ -1,4 +1,5 @@
 ﻿using HBSIS.BookManager.Business.Business;
+using HBSIS.BookManager.Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,19 +40,21 @@ namespace HBSIS.BookManager.WebAPI.Controllers
             }
         }
 
-        // POST api/values
-        public void Post([FromBody]string value)
+        [HttpPost]
+        [Route("add")]
+        public HttpResponseMessage Add(Author author)
         {
+            try
+            {
+                new AuthorBusiness().Add(author);
+
+                return Request.CreateResponse(HttpStatusCode.OK, "Success");
+            }
+            catch (Exception ex)
+                {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
         }
 
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
-        }
     }
 }

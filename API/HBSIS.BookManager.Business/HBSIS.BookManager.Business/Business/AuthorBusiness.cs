@@ -19,5 +19,10 @@ namespace HBSIS.BookManager.Business.Business
         {
             return new AuthorDAL().GetByName(name);
         }
+
+        public void Add(Author author)
+        {
+            new AuthorDAL().Add(author);
+        }
     }
 }

@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Book } from './models/book';
+import { Author } from './models/author';
 
 @Injectable({
   providedIn: 'root'
 })
 export  class  APIService {
+  
 
   public book : Book;
 
@@ -34,5 +36,9 @@ export  class  APIService {
 
   listAuthors() : any {
     return this.httpClient.get(`${this.API_URL}author/list`);
+  }
+
+  addAuthor(author: Author) {
+    return this.httpClient.post(`${this.API_URL}author/add`, author);
   }
 }

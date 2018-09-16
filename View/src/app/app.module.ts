@@ -9,7 +9,8 @@ import { AddBookComponent } from './add-book/add-book.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import { ListBookComponent } from './list-book/list-book.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NgxMaskModule} from 'ngx-mask'
+import {NgxMaskModule} from 'ngx-mask';
+import { AddAuthorComponent } from './add-author/add-author.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,16 @@ import {NgxMaskModule} from 'ngx-mask'
     AddBookComponent,
     EditBookComponent,
     ListBookComponent,
+    AddAuthorComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

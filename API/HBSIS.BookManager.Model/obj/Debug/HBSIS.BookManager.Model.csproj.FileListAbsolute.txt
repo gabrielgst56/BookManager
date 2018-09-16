@@ -22,3 +22,15 @@ C:\Users\Gabriel\Desktop\HBSIS.BookManager\HBSIS.BookManager\HBSIS.BookManager\H
 C:\Users\Gabriel\Desktop\HBSIS.BookManager\HBSIS.BookManager\HBSIS.BookManager\HBSIS.BookManager.Model\obj\Debug\HBSIS.BookManager.Model.csproj.CopyComplete
 C:\Users\Gabriel\Desktop\HBSIS.BookManager\HBSIS.BookManager\HBSIS.BookManager\HBSIS.BookManager.Model\obj\Debug\HBSIS.BookManager.Model.dll
 C:\Users\Gabriel\Desktop\HBSIS.BookManager\HBSIS.BookManager\HBSIS.BookManager\HBSIS.BookManager.Model\obj\Debug\HBSIS.BookManager.Model.pdb
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\bin\Debug\HBSIS.BookManager.Model.dll.config
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\bin\Debug\HBSIS.BookManager.Model.dll
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\bin\Debug\HBSIS.BookManager.Model.pdb
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\bin\Debug\EntityFramework.dll
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\bin\Debug\EntityFramework.xml
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\obj\Debug\HBSIS.BookManager.Model.csprojAssemblyReference.cache
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\obj\Debug\HBSIS.BookManager.Model.csproj.CoreCompileInputs.cache
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\obj\Debug\HBSIS.BookManager.Model.csproj.CopyComplete
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\obj\Debug\HBSIS.BookManager.Model.dll
+D:\Downloads\hbsis.bookmanager\API\HBSIS.BookManager.Model\obj\Debug\HBSIS.BookManager.Model.pdb

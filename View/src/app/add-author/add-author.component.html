@@ -1,0 +1,25 @@
+<div class="content">
+  <h2 class="text-center">Add Author</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" formControlName="name" placeholder="Name" name="name" 
+      class="form-control" id="name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+      <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+        <div *ngIf="f.name.errors.required">Name is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input formControlName="age" placeholder="Age" name="age" 
+      class="form-control" id="age" [ngClass]="{ 'is-invalid': submitted && f.age.errors }" />
+      <div *ngIf="submitted && f.age.errors" class="invalid-feedback">
+        <div *ngIf="f.age.errors.required">Age is required</div>
+      </div>
+    </div>
+
+    <button class="btn btn-success">Confirm</button>
+    <button class="btn btn-success" style="margin-left: 20px;"  (click)="return()">Cancel</button>
+  </form>
+</div>

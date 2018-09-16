@@ -4,8 +4,8 @@ namespace HBSIS.BookManager.Model.Models
 {
     public class Book
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
 
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int BookId { get; set; }
      
         public string Name { get; set; }

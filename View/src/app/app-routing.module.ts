@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AddBookComponent } from './add-book/add-book.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import { ListBookComponent } from './list-book/list-book.component';
+import { AddAuthorComponent } from './add-author/add-author.component';
 
 const routes: Routes = [
     { path:  '', redirectTo:  'books', pathMatch:  'full' },
@@ -17,6 +18,10 @@ const routes: Routes = [
 {
     path:  'list-book',
     component:  ListBookComponent
+},
+{
+    path:  'add-author',
+    component: AddAuthorComponent
 }
 ];
 

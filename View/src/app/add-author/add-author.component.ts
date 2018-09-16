@@ -5,36 +5,26 @@ import { APIService } from  '../api.service';
 import { Book } from '../models/book';
 import { Author } from '../models/author';
 
+
 @Component({
-  selector: 'app-add-book',
-  templateUrl: './add-book.component.html',
-  styleUrls: ['./add-book.component.css']
+  selector: 'app-add-author',
+  templateUrl: './add-author.component.html',
+  styleUrls: ['./add-author.component.css']
 })
-export class AddBookComponent implements OnInit {
+export class AddAuthorComponent implements OnInit {
 
-  constructor(private formBuilder:FormBuilder, private router: Router, private  apiService:  APIService) { 
+  constructor(private formBuilder:FormBuilder, private router: Router, private  apiService:  APIService) { }
 
-  }
-
-  submitted = false;
-  book:  Book;
-  authors: Author[];
   addForm: FormGroup;
+  submitted = false;
 
   ngOnInit() {
-    this.authors = this.apiService.listAuthors().subscribe((data:  Array<Author>) => {
-      this.authors  =  data;
-  });
-
     this.addForm = this.formBuilder.group({
       name:['', Validators.required],
-      price: [],
-      quantity: [],
-      author: ['', Validators.required]
+      age: ['', Validators.required]
     });
   }
 
-  
   get f() { return this.addForm.controls; }
 
   onSubmit(){
@@ -44,16 +34,14 @@ export class AddBookComponent implements OnInit {
         return;
     }
 
-    let book:Book = new Book(
+    let author:Author = new Author(
       0,
       this.addForm.value.name,
-      this.addForm.value.author,
-      null,
-      this.addForm.value.price,
-      this.addForm.value.quantity
+      this.addForm.value.age,
+      null
     );
 
-    this.apiService.addBook(book)
+    this.apiService.addAuthor(author)
     .subscribe( data => {
       this.router.navigate(['list-book']);
     });
