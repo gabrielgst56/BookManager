@@ -1,23 +1,23 @@
 Bem vindo ao meu projeto de Gerenciamento de Livros.
 
 
-Requisitos para execução do projeto: 
+Requisitos para execuÃ§Ã£o do projeto: 
 	
-	-Para instalação do Angular, executar npm install -g @angular/cli (É necessário ter NodeJs e NPM instalados em sua máquina);
-	-Ir ao diretório "View" do projeto e utilizar o comando "Npm install" para instalar as dependências e criar a pasta node_modules.
-	-Ir até o diretório hbsis-bookmanager e executar o comando "npm start" para a execução do projeto frontend, você pode acessá-lo através do endereço 'http://localhost:4200/'.
-	-Abrir a solution contida no diretório HBSIS.BookManager.API e executá-la, para que a API se torne acessível através do endereço http://localhost:55504/'.
+	-Para instalaÃ§Ã£o do Angular, executar npm install -g @angular/cli (Ã‰ necessÃ¡rio ter Node e NPM instalados em sua mÃ¡quina);
+	-Ir ao diretÃ³rio "View" do projeto e utilizar o comando "Npm install" para instalar as dependÃªncias e criar a pasta node_modules.
+	-Ir atÃ© o diretÃ³rio hbsis-bookmanager e executar o comando "npm start" para a execuÃ§Ã£o do projeto frontend, vocÃª pode acessÃ¡-lo atravÃ©s do endereÃ§o 'http://localhost:4200/'.
+	-Abrir a solution contida no diretÃ³rio HBSIS.BookManager.API e executÃ¡-la, para que a API se torne acessÃ­vel atravÃ©s do endereÃ§o http://localhost:55504/'.
 
 
 A API foi feita em 4 camadas. Sendo elas:
 	
-	Controller = Utilizado para receber as requisições enviadas pelo frontend em Angular.
-	Business = Utilizado para realizar as lógicas da regra de negócio.
-	DAL = Utilizado para gerenciar os dados diretamente com a conexão ao banco.
+	Controller = Utilizado para receber as requisiÃ§Ãµes enviadas pelo frontend em Angular.
+	Business = Utilizado para realizar as lÃ³gicas da regra de negÃ³cio.
+	DAL = Utilizado para gerenciar os dados diretamente com a conexÃ£o ao banco.
 	Model = Utilizado para armazenar os modelos que o sistema possui, sendo referenciado em todos os projetos.
 	
 
 
-Para mais informações sobre a instalação do Angular, acessar https://cli.angular.io/.
+Para mais informaÃ§Ãµes sobre a instalaÃ§Ã£o do Angular, acessar https://cli.angular.io/.
 
 			
